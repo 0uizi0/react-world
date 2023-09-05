@@ -6,6 +6,10 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  reactStrictMode: true,
+  images: {
+    domains: ['i.imgur.com'],
+  },
 }
 
 export default withVanillaExtract(nextConfig)
