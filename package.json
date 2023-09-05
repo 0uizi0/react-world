@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "description": "리액트로 구현하는 리얼 월드 프로젝트",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -39,7 +40,14 @@
     "url": "https://github.com/pagers-org/react-world/issues"
   },
   "homepage": "https://github.com/pagers-org/react-world#readme",
+  "babel": {
+    "plugins": [
+      "@vanilla-extract/babel-plugin"
+    ]
+  },
   "dependencies": {
+    "@vanilla-extract/babel-plugin": "^1.2.0",
+    "@vanilla-extract/css": "^1.13.0",
     "next": "^13.4.19"
   },
   "devDependencies": {
@@ -48,6 +56,7 @@
     "@types/react": "^18.2.21",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
+    "@vanilla-extract/next-plugin": "^2.3.0",
     "eslint": "^8.48.0",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-prettier": "^9.0.0",
