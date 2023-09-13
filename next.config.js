@@ -8,7 +8,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
   images: {
-    domains: ['i.imgur.com'],
+    domains: ['i.imgur.com', 'api.realworld.io'],
   },
 }
 
