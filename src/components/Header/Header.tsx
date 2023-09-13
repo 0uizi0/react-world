@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import AuthLinks from '../authLinks/AuthLinks'
 const Header = () => {
