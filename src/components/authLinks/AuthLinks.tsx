@@ -30,6 +30,7 @@ const AuthLinks = () => {
 
   const handleLogout = () => {
     Cookies.remove('authToken')
+    router.refresh()
     router.push('/')
   }
 
